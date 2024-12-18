@@ -9,7 +9,7 @@
     </section>
   </header>
 
-  <form [formGroup]="contatoForm">
+  <form [formGroup]="contatoForm" (ngSubmit)="salvarContato()">
     <label for="nome">Nome</label>
     <input
       type="text"
@@ -65,7 +65,9 @@
   </form>
 
   <section class="botoes">
-    <button class="botao-cancelar" type="button">Cancelar</button>
+    <button (click)="cancelar()" class="botao-cancelar" type="button">
+      Cancelar
+    </button>
     <button class="botao-salvar" type="submit">Salvar contato</button>
   </section>
 </app-container>

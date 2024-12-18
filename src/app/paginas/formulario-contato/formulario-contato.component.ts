@@ -29,4 +29,12 @@ export class FormularioContatoComponent {
       observacoes: new FormControl('Olá mundo!'),
     });
   }
+
+  salvarContato() {
+    console.log(this.contatoForm.value);
+  }
+
+  cancelar() {
+    console.log('Submissão Cancelada');
+  }
 }
