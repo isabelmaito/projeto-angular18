@@ -1,0 +1,13 @@
+input {
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  width: 100%;
+  margin-bottom: 40px 0;
+  padding: 6px 12px;
+  color: #6c757d;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
