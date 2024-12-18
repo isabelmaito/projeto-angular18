@@ -1,0 +1,49 @@
+<app-container>
+  <header>
+    <section class="cabecalho-link">
+      <img src="assets/logo.png" alt="" />
+    </section>
+    <section class="cabecalho-contato">
+      <img src="assets/adicionar-contato.png" alt="" />
+      <h1>Adicionar Contato</h1>
+    </section>
+  </header>
+
+  <form>
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" placeholder="Digite o nome do contato" />
+
+    <label for="telefone">Telefone</label>
+    <input
+      type="text"
+      id="telefone"
+      placeholder="Digite o telefone do contato"
+    />
+
+    <label for="email">E-mail</label>
+    <input type="text" id="email" placeholder="Digite o e-mail do contato" />
+
+    <app-separador></app-separador>
+
+    <label for="aniversario">Aniversário</label>
+    <input type="date" id="aniversario" placeholder="Data de nascimento" />
+
+    <label for="redes">Redes Sociais</label>
+    <div class="input-container">
+      <span class="span-http">http://</span>
+      <input type="url" id="redes" placeholder="Adicione a URL da página" />
+    </div>
+
+    <label for="observacoes">Observacoes</label>
+    <textarea
+      type="text"
+      id="nome"
+      placeholder="Coloque observações nesse espaço. Exemplo: 'Instrutora da academia  'Nova Imagem', amiga da Júlia."
+    ></textarea>
+  </form>
+
+  <section class="botoes">
+    <button class="botao-cancelar" type="button">Cancelar</button>
+    <button class="botao-salvar" type="submit">Salvar contato</button>
+  </section>
+</app-container>
