@@ -9,29 +9,50 @@
     </section>
   </header>
 
-  <form>
+  <form [formGroup]="contatoForm">
     <label for="nome">Nome</label>
-    <input type="text" id="nome" placeholder="Digite o nome do contato" />
+    <input
+      type="text"
+      id="nome"
+      placeholder="Digite o nome do contato"
+      formControlName="nome"
+    />
 
     <label for="telefone">Telefone</label>
     <input
       type="text"
       id="telefone"
       placeholder="Digite o telefone do contato"
+      formControlName="telefone"
     />
 
     <label for="email">E-mail</label>
-    <input type="text" id="email" placeholder="Digite o e-mail do contato" />
+    <input
+      type="text"
+      id="email"
+      placeholder="Digite o e-mail do contato"
+      formControlName="email"
+    />
 
     <app-separador></app-separador>
 
     <label for="aniversario">Aniversário</label>
-    <input type="date" id="aniversario" placeholder="Data de nascimento" />
+    <input
+      type="date"
+      id="aniversario"
+      placeholder="Data de nascimento"
+      formControlName="aniversario"
+    />
 
     <label for="redes">Redes Sociais</label>
     <div class="input-container">
       <span class="span-http">http://</span>
-      <input type="url" id="redes" placeholder="Adicione a URL da página" />
+      <input
+        type="url"
+        id="redes"
+        placeholder="Adicione a URL da página"
+        formControlName="redes"
+      />
     </div>
 
     <label for="observacoes">Observacoes</label>
@@ -39,6 +60,7 @@
       type="text"
       id="nome"
       placeholder="Coloque observações nesse espaço. Exemplo: 'Instrutora da academia  'Nova Imagem', amiga da Júlia."
+      formControlName="observacoes"
     ></textarea>
   </form>
 
