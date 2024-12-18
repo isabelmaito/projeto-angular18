@@ -19,14 +19,14 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 export class FormularioContatoComponent {
   contatoForm!: FormGroup;
 
-  constructo() {
+  constructor() {
     this.contatoForm = new FormGroup({
-      nome: new FormControl(''),
-      telefone: new FormControl(''),
-      email: new FormControl(''),
+      nome: new FormControl('Isabel'),
+      telefone: new FormControl('99 9999-9999'),
+      email: new FormControl('isabel@email.com'),
       aniversario: new FormControl(''),
       redes: new FormControl(''),
-      observacoes: new FormControl(''),
+      observacoes: new FormControl('Olá mundo!'),
     });
   }
 }
